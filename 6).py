@@ -1,18 +1,16 @@
-def cuatronumeros():
-    numeros = []
+def multiplicacion(numero):
+    return numero * (numero + 1)
+        
     
-    for i in range(0, 4):
-        num = int(input())
+numeros = []
+
+for i in range(0, 4):
+        num = int(input("Ingrese cuatro numeros: "))
         numeros.append(num)
 
-    for x in range(0, 4)
-        for y in range(0, 4)
-            numeros[x, y]
-        
-    numeros = [i * 2 for i in numeros]
-    print(numeros)
-    
+
+print(list(map(multiplicacion, numeros)))
 
 
 
-cuatronumeros()
+
