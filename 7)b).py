@@ -10,5 +10,6 @@ def mes():
         day = monthrange(year, month)[1]
         monthobj = datetime.datetime.strptime(str(month), "%m")
         monthname = monthobj.strftime("%b")
+        print(day)
         print("La cantidad de dias en el mes {} del año {} es de: {}".format(monthname, year, day))
 mes()
