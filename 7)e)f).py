@@ -54,8 +54,15 @@ def diasaño():
             dias2 = monthrange(año, i)[1]
             diashastafecha = diashastafecha + dias2
     try:
-        diasrestantes = diastotal - (diashastafecha - diames)
-        print("Quedan {} dias para que finalice el año {}.".format(diasrestantes, año))
+        diashastafecha = diashastafecha - diames
+        diasrestantes = diastotal - diashastafecha
+        print("Quedan {} dias para que finalice el año {}, y han transcurrido {} dias hasta la fecha ingresada.".format(diasrestantes, año, diashastafecha))
+        return diasrestantes,diastotal,diashastafecha,diames
     except ValueError:
         print("Error de formateo.")
+
+
 diasaño()
+
+
+
