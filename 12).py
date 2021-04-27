@@ -1,5 +1,14 @@
 
 def vocales():
+
+    """
+    un for recorre la palabra y revisa si alguna de las palabras en las que esta
+    el for coincide con una de las palabras en el string "aeiouAEIOU", que
+    contiene a todas las vocales en minusculas y mayusculas, y en base a eso
+    le suma 1 a la variable vocal, que cuenta la cantidad de vocales que hay en
+    el string ingresado.
+    """
+    
     palabra = input("Ingresa una palabra: ")
     vocal = 0
 
