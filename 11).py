@@ -1,4 +1,13 @@
 def calificaciones():
+
+    """
+    lo que esta funcion utiliza es una regla de 3 dentro de un for para resolver
+    el calculo de porcentaje, y el problema entero es resuelto adentro de un for
+    que forma a los resultados como si fuera una tabla de resultados. en el
+    caso de que hayan respuestas mayores a la cantidad de ejercicios totales,
+    el programa asume que es un error de calificacion y no muestra ese
+    resultado en especifico, continuando con los que estan bien.
+    """
     ejer = int(input("Ingresa la cantidad de ejercicios totales: "))
     listaexamen = [
         (int(input("Resueltos:")), ejer),
